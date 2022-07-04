@@ -6,7 +6,7 @@
 
 1. ### npm install.
 2. ### npx pod-install ios.
-3. ### Change Project name and Package name
+3. ### Change Project name and Package name(IF NEEDED)
 4. ### Add required permissions.
    iOS: add in plist.info file.  
    Android: add in the manifest file.
