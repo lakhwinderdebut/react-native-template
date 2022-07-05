@@ -4,7 +4,7 @@ export default Colors = {
   textPrimary: '',
   textSecondary: '',
   border: '',
-  backgroundPrimary: '',
+  backgroundPrimary: '#8ffbdc',
   backgroundSecondary: '',
   white: '#FFFFFF',
   black: '#000000',
