@@ -14,5 +14,5 @@ npx react-native init SomeApp --template https://github.com/lakhwinderdebut/reac
 4. ### Add required permissions.
    iOS: add in plist.info file.  
    Android: add in the manifest file.
-5. ### Change Fonts in Utils/fonts.js.
-6. ### Add colors in Utils/colors.js.
+5. ### Change Fonts in styling/fonts.js.
+6. ### Add colors in styling/colors.js.
