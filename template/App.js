@@ -11,7 +11,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import colors from './src/styling/colors';
 
 const App = () => {
-  setTimeout(() => {}, 2000);
+  // setTimeout(() => {}, 2000);
   return (
     <View style={styles.sectionContainer}>
       // EDIT AS YOU LIKE
