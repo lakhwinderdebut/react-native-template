@@ -2,9 +2,9 @@
 
 ### Basic React Native template for Starting new React Native Project with pre-requisite dependencies declared and ready to use.
 
-## command for cloning new project with this template, where 'SomeApp' is the name ## of the project, change it to your needs
+##### command for cloning new project with this template, where 'SomeApp' is the name ##### of the project, change it to your needs
 
-## npx react-native init SomeApp --template https://github.com/lakhwinderdebut/react-native-template.git
+npx react-native init SomeApp --template https://github.com/lakhwinderdebut/react-native-template.git
 
 > #### Check List- Steps to do after clone:
 
