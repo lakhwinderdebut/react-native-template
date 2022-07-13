@@ -4,13 +4,15 @@ import {NavigationContainer} from '@react-navigation/native';
 
 import AuthNavigator from './auth-navigator';
 import AppNavigator from './app-navigator';
+import {useSelector} from 'react-redux';
+import {authToken} from '../store/reducers/AuthSlice';
 
 const RootNavigator = () => {
-  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+  const userToken = useSelector(authToken);
   return (
     <NavigationContainer>
       {/* Conditional stack navigator rendering based on login state */}
-      {isLoggedIn ? <AppNavigator /> : <AuthNavigator />}
+      {userToken ? <AppNavigator /> : <AuthNavigator />}
     </NavigationContainer>
   );
 };

@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {createStackNavigator} from '@react-navigation/stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -10,6 +12,7 @@ const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 const AppNavigator = () => {
+  console.log('**************AppNavigator******************');
   return (
     <Stack.Navigator>
       <Stack.Screen
