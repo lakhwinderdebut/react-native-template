@@ -13,11 +13,7 @@ const HomeScreen = () => {
   const dispatch = useDispatch();
 
   const handleLogin = () => {
-    const userToken = {
-      authToken: null,
-    };
-
-    dispatch(setSignOut(userToken));
+    dispatch(setSignOut());
   };
   return (
     <SafeAreaView
