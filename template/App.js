@@ -1,36 +1,16 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
+import 'react-native-gesture-handler';
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import colors from './src/styling/colors';
+import Store from './src/store/Store';
+import {Provider} from 'react-redux';
+import RootNavigator from './src/navigation';
+import {View} from 'react-native';
 
 const App = () => {
-  // setTimeout(() => {}, 2000);
   return (
-    <View style={styles.sectionContainer}>
-      // EDIT AS YOU LIKE
-      <Text style={styles.sectionTitle}>Splash Screen</Text>
-    </View>
+    <Provider store={Store}>
+      <RootNavigator />
+    </Provider>
   );
 };
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    backgroundColor: colors.backgroundPrimary,
-    alignContent: 'center',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-});
 
 export default App;
