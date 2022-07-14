@@ -8,9 +8,11 @@ import {
 } from 'react-native';
 import {useDispatch} from 'react-redux';
 import {setSignIn} from '../../store/reducers/AuthSlice';
+import {useTranslation} from 'react-i18next';
 
-const LoginScreen = ({navigation}) => {
+const LoginScreen = props => {
   const dispatch = useDispatch();
+  const {t} = useTranslation();
 
   const handleLogin = () => {
     const userToken = {
@@ -25,9 +27,11 @@ const LoginScreen = ({navigation}) => {
         height: '100%',
       }}>
       <View style={styles.container}>
-        <Text style={{marginBottom: 20, fontSize: 15}}>Login Screen</Text>
+        <Text style={{marginBottom: 20, fontSize: 15}}>
+          {t('t.loginPage.title')}
+        </Text>
         <TouchableOpacity onPress={handleLogin} style={styles.btn}>
-          <Text style={styles.text}>Sign In</Text>
+          <Text style={styles.text}>{t('t.loginPage.btnTitle')}</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

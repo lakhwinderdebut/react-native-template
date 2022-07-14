@@ -8,9 +8,11 @@ import {
 } from 'react-native';
 import {useDispatch} from 'react-redux';
 import {setSignOut} from '../../store/reducers/AuthSlice';
+import {useTranslation} from 'react-i18next';
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
+  const {t} = useTranslation();
 
   const handleLogin = () => {
     dispatch(setSignOut());
@@ -21,9 +23,11 @@ const HomeScreen = () => {
         height: '100%',
       }}>
       <View style={styles.container}>
-        <Text style={{marginBottom: 20, fontSize: 15}}>Home Screen</Text>
+        <Text style={{marginBottom: 20, fontSize: 15}}>
+          {t('t.homePage.title')}
+        </Text>
         <TouchableOpacity onPress={handleLogin} style={styles.btn}>
-          <Text style={styles.text}>Sign Out</Text>
+          <Text style={styles.text}>{t('t.homePage.btnTitle')}</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

@@ -1,0 +1,10 @@
+{
+    "loginPage":{
+        "title":"Login Screen",
+        "btnTitle": "Sign In"
+    },
+    "homePage":{
+        "title":"Home Screen",
+        "btnTitle": "Sign Out"
+    }
+}

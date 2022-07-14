@@ -1,0 +1,10 @@
+{
+    "loginPage":{
+        "title":"लॉगिन स्क्रीन",
+        "btnTitle": "साइन इन करें"
+    },
+    "homePage":{
+        "title":"होम स्क्रीन",
+        "btnTitle": "साइन आउट"
+    }
+}
