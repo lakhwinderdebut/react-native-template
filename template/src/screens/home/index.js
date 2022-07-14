@@ -14,7 +14,7 @@ const HomeScreen = () => {
   const dispatch = useDispatch();
   const {t} = useTranslation();
 
-  const handleLogin = () => {
+  const handleLogout = () => {
     dispatch(setSignOut());
   };
   return (
@@ -26,7 +26,7 @@ const HomeScreen = () => {
         <Text style={{marginBottom: 20, fontSize: 15}}>
           {t('t.homePage.title')}
         </Text>
-        <TouchableOpacity onPress={handleLogin} style={styles.btn}>
+        <TouchableOpacity onPress={handleLogout} style={styles.btn}>
           <Text style={styles.text}>{t('t.homePage.btnTitle')}</Text>
         </TouchableOpacity>
       </View>

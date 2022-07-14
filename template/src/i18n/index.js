@@ -1,17 +1,17 @@
 // Exports are managed from here. This folder contains the language files
 
-import common_en from './en/common.json';
-import common_hi from './hi/common.json';
+import en from './en/common.json';
+import hi from './hi/common.json';
 
 export default resources = {
   en: {
     translation: {
-      t: common_en,
+      t: en,
     },
   },
   hi: {
     translation: {
-      t: common_hi,
+      t: hi,
     },
   },
 };

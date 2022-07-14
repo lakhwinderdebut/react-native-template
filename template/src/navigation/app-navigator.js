@@ -12,7 +12,6 @@ const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 const AppNavigator = () => {
-  console.log('**************AppNavigator******************');
   return (
     <Stack.Navigator>
       <Stack.Screen
