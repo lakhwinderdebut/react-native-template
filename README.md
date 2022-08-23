@@ -4,7 +4,9 @@
 
 ##### command for cloning new project with this template, where 'SomeApp' is the name of the project, change it to your needs
 
+```sh
 npx react-native init SomeApp --template https://github.com/lakhwinderdebut/react-native-template.git
+```
 
 > #### Check List- Steps to do after clone:
 
